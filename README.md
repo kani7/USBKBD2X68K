@@ -2,7 +2,7 @@
 ![](images/keyled.jpg)
 
 ## What's this
-たねけん氏(@taneken2000/[taneken](https://github.com/taneken))とzato氏(@z_alpha2/[ztto](https://github/ztto))による[USBKBD2X68K](https://github.com/taneken/USBKBD2X68K)を元に、
+たねけん氏(@taneken2000/[taneken](https://github.com/taneken))とzato氏(@z_alpha2/[ztto](https://github.com/ztto))による[USBKBD2X68K](https://github.com/taneken/USBKBD2X68K)を元に、
 がぶがぶ氏(@gabu_nyanco)、ましろん氏(@masiron203)、zato氏が追加したようなキーロック状態LEDを盛り込んだ改変版です。
 
 ## おことわり
@@ -25,7 +25,7 @@
 - キーリピート開始待ち時間とキーリピート間隔を実機同様に設定可能
 - 能動素子のコストだけで見るならArduinoベースかつLED付き変換機の中では最安
 - テレビコントロールが可能
-- X68000 Z Early Access Kit (EAK)付属キーボードのキーバインドおよびLED制御に対応
+- X68000 Z付属キーボードのキーバインドおよびLED制御に対応
 
 ## 弱点
 - オリジナルのUSBKBD2X68K(V0.4)と端子の割り当てが異なる
@@ -73,7 +73,7 @@ const uint8_t LED_PWM[4] = {0, 0xc0, 0xf0,  0xfc};
 Fnキーを途中で離すと意図しないスキャンコードが送出されるという考慮漏れがあります。
 詳細は[BUGS.md](./BUGS.md)を確認ください。
 
-### X68000 Z Early Access Kit付属キーボードの場合
+### X68000 Z付属キーボードの場合
 キーの刻印通りになるよう割り当ててあります。  
 なお、以下の注意事項があります。
 - キーボード裏面のスイッチは`X68`側にしてください。
